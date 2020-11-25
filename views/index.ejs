@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.JS | Homepage</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Node.JS Login System</h1>
+            <ul class="nav-links">
+                <a href="/"><li>Home</li>
+                <a href="/login"><li>Login</li></a>
+                <a href="/logout"><li class="btn">Logout</li></a>
+            </ul>
+        </div>
+    </header><br><br><br>
+    <div class="container">
+        <p>Welcome back, <b><%= fullname %></b></p><br>
+        <pre>This page is an protected route. It can only be view if you're <b>logged in!</b></pre>
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateX(200%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: #f7f7f7;
+}
+
+.centerDiv {
+    width: 320px;
+    height: 410px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+.form-title {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.form {
+    width: 100%;
+    height: 323px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 7px;
+}
+.form-group input {
+    height: 35px;
+    border: 1.5px solid #cecece;
+    border-radius: 3px;
+    padding: 0 8px;
+    outline: none;
+}
+.form-group input:focus {
+    border: 1.5px solid rgb(170, 170, 170);
+}
+.form-group label {
+    margin-left: 10px;
+}
+
+.submit-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(61, 204, 156);
+    padding: 7px 18px;
+    color: #ffffff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    align-self: flex-start;
+    margin-left: 10%;
+    transition: background .3s ease;
+}
+
+.submit-btn:hover {
+    background: rgb(49, 163, 125);
+}
+
+.bottom-text {
+    position: absolute;
+    bottom: 15px;
+    color: rgb(139, 139, 139);
+}
+
+.bottom-text a {
+    color: rgb(61, 204, 156);
+    font-weight: 600;
+}
+
+.error {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: rgba(202, 49, 49,.8);
+    min-height: 60px;
+    width: 200px;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(129, 22, 22);
+    animation: slide .3s ease;
+    display: none;
+}
+
+.active-error {
+    display: flex !important;
+}
+
+.success-display {
+    display: flex !important;
+    background: rgba(49, 163, 125, .8) !important;
+    border: 2px solid rgba(23, 124, 74, 0.8) !important;
+    color: rgba(12, 66, 39, 0.8);
+}
+

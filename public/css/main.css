@@ -1,0 +1,50 @@
+
+.header {
+    width: 100%;
+    padding: 20px 0;
+    background: rgb(22, 154, 158);
+}
+
+.header .container {
+    width: 88%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    width: 88%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo {
+    color: #f9f9f9;
+    font-size: 25px;
+    letter-spacing: .8px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.nav-links li {
+    color: #f9f9f9;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.btn {
+    padding: 7px 16px;
+    background: rgb(26, 48, 173);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
